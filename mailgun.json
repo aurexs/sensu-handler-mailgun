@@ -1,0 +1,20 @@
+{
+	"mailgun":{
+		"api_key":"key-9-9-XXXXXXXXXXXXXXX",
+		"domain":"example.com",
+		"sender_name":"Example Monitor",
+		"sender_email":"sensu@example.com",
+		"candidates":{
+			"sysadmin@example.com": {
+				"sensu_roles":[ "web-server" ], // subscribers
+				"sensu_checks":[], // checks
+				"sensu_level": 1 // 1 for warnging, 2 for critical alerts
+			},
+			"contacto@example.com": {
+				"sensu_roles":[],
+				"sensu_checks":[ "mysql-alive" ],
+				"sensu_level": 2
+			}
+		}
+	}
+}
